@@ -1,0 +1,22 @@
+{
+    "name": "defamiliarizing the browser",
+    "version": "1.0.0",
+    "description": "480 project 5",
+    "manifest_version": 3,
+    "author": "Nihal Karim",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Defamiliarizing the browser"
+    }
+}
